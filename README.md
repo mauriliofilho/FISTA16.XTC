@@ -9,6 +9,7 @@ Developers are able to take advantage Test Cloud time to test their applications
 
 
 # Slides
+http://www.slideshare.net/saramgsilva/testing-a-mobile-app-using-xamarin-test-cloud
 
 #Event Reference
 http://fista.iscte-iul.pt/workshops/#?Xamarin
