@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+        x:Class="FISTA16.Demo.MainPage"
+ 		StyleId="UserProfilePage"
+		Title="User Profile Form"
+		BackgroundColor="White">
+ <ContentPage.Content>
+        <Grid Padding="20,10,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Text="Name:" TextColor="Black">
+                <Label.FontSize>
+                    <OnPlatform Android="22"
+                                WinPhone="18"
+                                iOS="20"
+                                x:TypeArguments="x:Double" />
+                </Label.FontSize>
+            </Label>
+
+            <Entry x:Name="NameEntry"
+                   Grid.Row="1" TextColor="Black"
+                   StyleId="NameEntry"
+                   TextChanged="MobileNumberEntry_OnTextChanged"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Label Grid.Row="3" Text="Mobile Number:" TextColor="Black">
+                <Label.FontSize>
+                    <OnPlatform Android="22"
+                                WinPhone="18"
+                                iOS="20"
+                                x:TypeArguments="x:Double" />
+                </Label.FontSize>
+            </Label>
+
+            <Entry x:Name="MobileNumberEntry"
+                   Grid.Row="4" TextColor="Black"
+                   StyleId="MobileNumberEntry"
+                   TextChanged="MobileNumberEntry_OnTextChanged"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Button Grid.Row="5"
+            		StyleId="CheckUser"
+                    Clicked="Button_OnClicked"
+                    Text="Check User" />
+
+            <Label x:Name="FeedbackLabel"
+                   Grid.Row="7" TextColor="Black"
+                   HorizontalOptions="StartAndExpand"
+                   HorizontalTextAlignment="Center"
+                   StyleId="FeedbackLabel"
+                   VerticalOptions="CenterAndExpand">
+                <Label.FontSize>
+                    <OnPlatform Android="22"
+                                WinPhone="18"
+                                iOS="20"
+                                x:TypeArguments="x:Double" />
+                </Label.FontSize>
+            </Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
