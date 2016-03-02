@@ -1,11 +1,19 @@
 ﻿<Properties StartupItem="Droid/FISTA16.Demo.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (KitKat)" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State name="__root__">
           <Node name="FISTA16.Demo" expanded="True">
-            <Node name="FISTA16.Demo.UITests" expanded="True" selected="True" />
+            <Node name="FISTA16.Demo.UITests" expanded="True">
+              <Node name="FISTA16" expanded="True">
+                <Node name="Demo" expanded="True">
+                  <Node name="UITests" expanded="True">
+                    <Node name="Tests_iOS" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
